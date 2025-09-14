@@ -1,0 +1,19 @@
+micro-utility-aggregator/
+├── app/
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── tools/
+│       ├── case-converter/page.tsx
+│       ├── word-counter/page.tsx
+│       ├── password-generator/page.tsx
+│       ├── number-generator/page.tsx
+│       └── space-cleaner/page.tsx
+├── components/
+│   └── AdSlot.tsx
+├── public/
+│   └── favicon.ico
+├── package.json
+├── tailwind.config.js
+├── postcss.config.js
+├── tsconfig.json
