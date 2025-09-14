@@ -1,0 +1,25 @@
+import Link from "next/link";
+
+const tools = [
+  { name: "Case Converter", href: "/tools/case-converter" },
+  { name: "Word Counter", href: "/tools/word-counter" },
+  { name: "Password Generator", href: "/tools/password-generator" },
+  { name: "Number Generator", href: "/tools/number-generator" },
+  { name: "Space Cleaner", href: "/tools/space-cleaner" },
+];
+
+export default function HomePage() {
+  return (
+    <div className="grid gap-4">
+      {tools.map((tool) => (
+        <Link
+          key={tool.href}
+          href={tool.href}
+          className="block p-4 bg-white rounded-xl shadow hover:shadow-md transition"
+        >
+          {tool.name}
+        </Link>
+      ))}
+    </div>
+  );
+}
